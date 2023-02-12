@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Base Adaptar</string>
+    <string name="name">Name :</string>
+    <string name="rollno">Roll No. : </string>
+    <string name="phoneno">Phone No. :</string>
+    <string name="name2">Name</string>
+    <string name="rollno2">Roll No.</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="update">update</string>
+    <string name="add">Add</string>
+</resources>

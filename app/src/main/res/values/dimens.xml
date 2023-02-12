@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_325dp">325dp</dimen>
+    <dimen name="margin_320dp">320dp</dimen>
+    <dimen name="margin_330dp">330dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+</resources>

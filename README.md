@@ -1,0 +1,2 @@
+# BaseAdaptar
+ 
