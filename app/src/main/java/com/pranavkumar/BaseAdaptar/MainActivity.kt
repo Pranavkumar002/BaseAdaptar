@@ -2,6 +2,7 @@ package com.pranavkumar.BaseAdaptar
 
 import android.app.AlertDialog
 import android.app.Dialog
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -72,6 +73,9 @@ class MainActivity : AppCompatActivity(), ClickInterface {
         dialog.window?.setLayout(
             WindowManager.LayoutParams.MATCH_PARENT,
             WindowManager.LayoutParams.WRAP_CONTENT)
+        dialogBinding.etName.setText(array[position].name)
+        dialogBinding.etRollno.setText(array[position].rollno)
+        dialogBinding.etPhoneNo.setText(array[position].phoneno)
         dialogBinding.btnUpdate.setOnClickListener{
             if(dialogBinding.etName.text.toString().isNullOrEmpty()){
                 dialogBinding.etName.setError("Enter Name")

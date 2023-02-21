@@ -1,3 +1,3 @@
 package com.pranavkumar.BaseAdaptar
 
-data class MyModel(var name:String?=null,var rollno:String?=null,var phoneno:String?=null)
+data class MyModel(var name:String?="",var rollno:String?="",var phoneno:String?="")
