@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.core.widget.doOnTextChanged
 import com.pranavkumar.BaseAdaptar.databinding.ActivityMainBinding
 import com.pranavkumar.BaseAdaptar.databinding.LayoutAddBinding
 import com.pranavkumar.BaseAdaptar.databinding.LayoutEditBinding
@@ -28,6 +29,13 @@ class MainActivity : AppCompatActivity(), ClickInterface {
             dialog.window?.setLayout(
                 WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.WRAP_CONTENT)
+            dialogBinding.etPhoneNo.doOnTextChanged { text, _, _, _ ->
+                if((text?.length ?:0) <10){
+                    dialogBinding.etPhoneNo.setError("At least 10 Numbers")
+                }else{
+
+                }
+            }
             dialogBinding.btnAdd.setOnClickListener{
                 if(dialogBinding.etName.text.toString().isNullOrEmpty()){
                     dialogBinding.etName.setError("Enter Name")
